@@ -39,7 +39,7 @@ min_board = []
 n = []
 score = 0
 
-for board in boards[63:64]:
+for board in boards:
 	count = 0
 	correct = [[False for i in range(5)] for i in range(5)]
 	for move in moves:
@@ -56,6 +56,4 @@ for board in boards[63:64]:
 		count += 1
 
 print(score)
-#print(min_count)
-#print(n)
 
