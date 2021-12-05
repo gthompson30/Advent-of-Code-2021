@@ -14,7 +14,6 @@ for line in f:
 			grid[i][x1] += 1
 	elif (y1 == y2):
 		for i in range(min(x1, x2), max(x1, x2) + 1):
-			#print(f'  ({y1}, {i})')
 			grid[y1][i] += 1
 
 count = 0
@@ -24,6 +23,3 @@ for row in grid:
 			count += 1
 
 print(count)
-
-#for i in grid:
-#	print(''.join([str(j) for j in i]))
